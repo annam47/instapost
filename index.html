@@ -17,13 +17,15 @@
 
     <style>
       .icons {
+        background-color: white;
         transition: all 0.5s;
-        bottom: 7%;
-        transform: scale(0);
         position: absolute;
-        width: 50%;
+        transform: scale(0);
+        bottom: 10%;
+        /* width: 100%; */
       }
       .haram {
+        padding: 0;
         background-color: white;
         position: relative;
       }
@@ -95,42 +97,52 @@
                 width="50px"
                 src="https://cdn-icons-png.freepik.com/512/15050/15050772.png"
                 alt=""
-              />
+              />93
 
-              <p class="text-secondary mt-1">93</p>
+              <!-- <p class="text-secondary mt-1">93</p> -->
             </div>
           </div>
           <div class="col-xl-4 col-lg-3 col-md-3 col-sm-3 col-6">
             <div class="d-flex gap-2">
-              <p class="text-secondary">5comments</p>
-              <p class="text-secondary">3share</p>
+              <p class="text-secondary">
+                <span class="text-dark">5</span>Comment
+              </p>
+              <p class="text-secondary">
+                <span class="text-dark">3</span> share
+              </p>
             </div>
           </div>
         </div>
         <hr class="mt-0 p-0 text-secondary" />
 
         <div class="d-flex align-items-center justify-content-between px-xl-5">
-          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-3 text-center">
+          <div
+            class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-3 text-xl-center text-lg-center text-sm-start"
+          >
             <button class="haram border-0">
               <i class="bi bi-hand-thumbs-up fs-5"></i>
               Like
             </button>
           </div>
+
           <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-5 text-center">
+            <button class="border-0 bg-white fs-6">
+              <i class="bi bi-chat"></i> Comment
+            </button>
+          </div>
+          <div
+            class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-3 text-xl-center text-start"
+          >
             <div class="d-flex">
               <button class="border-0 bg-white fs-6">
-                <i class="bi bi-chat"></i> Comment
+                <i class="bi bi-share"></i> Share
               </button>
             </div>
           </div>
-          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-3 text-center">
-            <button class="border-0 bg-white fs-6">
-              <i class="bi bi-share"></i> Share
-            </button>
-          </div>
         </div>
+
         <div
-          class="d-flex icons mx-3 border-1 rounded-pill align-items-center p-0 border"
+          class="d-flex w-75 icons mx-3 border-1 rounded-pill align-items-center p-0 border"
         >
           <img
             class="like"
@@ -152,24 +164,28 @@
             src=" https://i.pinimg.com/originals/87/98/1b/87981b60dd584ab30d4e46d2f1fd2ea1.gif"
             alt=""
           />
+
           <img
             class="laugh"
             width="15%"
             src=" https://i.pinimg.com/originals/51/12/c7/5112c71a0fc28f25679de607211fa9d0.gif"
             alt=""
           />
+
           <img
             class="wow"
             width="15%"
             src="https://cdn.shopify.com/s/files/1/0310/9469/files/wow.gif"
             alt=""
           />
+
           <img
             class="sad"
             width="10%"
             src="https://media.tenor.com/pkwN9z5sETAAAAAj/crying-sad.gif"
             alt=""
           />
+
           <img
             class="angry"
             width="15%"
@@ -214,31 +230,32 @@
       solo.addEventListener("click", () => {
         let video = new Audio("./dua.mp3");
         video.play();
-        cliker.innerHTML = `<img style="padding:0; margin-left:0;" class='mx-0 px-0 ' width='50px' src='https://mir-s3-cdn-cf.behance.net/project_modules/disp/e4299734559659.56d57de04bda4.gif' alt=''>
+        cliker.innerHTML = `<img style="padding:0; margin-left:0;" class='mx-0 px-0 ' width='35px' src='https://mir-s3-cdn-cf.behance.net/project_modules/disp/e4299734559659.56d57de04bda4.gif' alt=''>
       Like`;
+        cliker.innerHTML.backgroundColor = " white";
       });
       fbr.addEventListener("click", () => {
         let animation = new Audio("./anam.mp3");
         animation.play();
-        cliker.innerHTML = `<img style="padding:0; margin-left:0;" class='mx-0 px-0 ' width='50px' src=' https://i.pinimg.com/originals/ff/05/c3/ff05c30c63f5b676ad90f003c73b08a1.gif' alt=''>
+        cliker.innerHTML = `<img style="padding:0; margin-left:0;" class='mx-0 px-0 ' width='35px' src=' https://i.pinimg.com/originals/ff/05/c3/ff05c30c63f5b676ad90f003c73b08a1.gif' alt=''>
       Love`;
       });
       tire.addEventListener("click", () => {
         let loli = new Audio("./bomb.mp3");
         loli.play();
-        cliker.innerHTML = `<img style="padding:0; margin-left:0;" class='mx-0 px-0 ' width='30px' src='  https://i.pinimg.com/originals/87/98/1b/87981b60dd584ab30d4e46d2f1fd2ea1.gif ' alt=''>
+        cliker.innerHTML = `<img style="padding:0; margin-left:0;" class='mx-0 px-0 ' width='25px' src='  https://i.pinimg.com/originals/87/98/1b/87981b60dd584ab30d4e46d2f1fd2ea1.gif ' alt=''>
       Bomb`;
       });
       fatima.addEventListener("click", () => {
         let nona = new Audio("./male.mp3");
         nona.play();
-        cliker.innerHTML = `<img style="padding:0; margin-left:0;" class='mx-0 px-0 ' width='35px' src='  https://i.pinimg.com/originals/51/12/c7/5112c71a0fc28f25679de607211fa9d0.gif ' alt=''>
+        cliker.innerHTML = `<img style="padding:0; margin-left:0;" class='mx-0 px-0 ' width='25px' src='  https://i.pinimg.com/originals/51/12/c7/5112c71a0fc28f25679de607211fa9d0.gif ' alt=''>
       Laugh`;
       });
       youna.addEventListener("click", () => {
         let mama = new Audio("./WOW.mp3");
         mama.play();
-        cliker.innerHTML = `<img style="padding:0; margin-left:0;" class='mx-0 px-0 ' width='35px' src=' https://cdn.shopify.com/s/files/1/0310/9469/files/wow.gif  ' alt=''>
+        cliker.innerHTML = `<img style="padding:0; margin-left:0;" class='mx-0 px-0 ' width='25px' src=' https://cdn.shopify.com/s/files/1/0310/9469/files/wow.gif  ' alt=''>
       WOW`;
       });
       nana.addEventListener("click", () => {
@@ -248,7 +265,7 @@
       hadi.addEventListener("click", () => {
         let unni = new Audio("./anger.mp3");
         unni.play();
-        cliker.innerHTML = `<img style="padding:0; margin-left:0;" class='mx-0 px-0 ' width='35px' src=' https://cdn.shopify.com/s/files/1/0310/9469/files/angry.gif ' alt=''>
+        cliker.innerHTML = `<img style="padding:0; margin-left:0;" class='mx-0 px-0 ' width='25px' src=' https://cdn.shopify.com/s/files/1/0310/9469/files/angry.gif ' alt=''>
       Anger`;
       });
     </script>
